@@ -43,5 +43,10 @@ def IMC(altura, massa):
     print( "O IMC e: ", IMC)
 IMC(0.7, 11)
 
-#if x > 3:
-#	print(x, " e maior que 3")
+def comprimento_de_onda(d, D):
+    comprimento = 632.8*(10**(-9)) #comprimento de onda em metros
+    #D = 1.98 #distância do anteparo em metros
+    #d = 0.25*(10**(-3)) #distância entre as fendas em metros
+    delta_y = (comprimento*D)/d
+    print("A distancia entre dois maximos e: ", delta_y)
+comprimento_de_onda(0.00025, 1.98)
